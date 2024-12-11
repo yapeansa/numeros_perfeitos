@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "funcoes.h"
+#include "perfeito.h"
 
 int main(void)
 {

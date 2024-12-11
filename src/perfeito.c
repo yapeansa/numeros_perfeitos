@@ -1,5 +1,5 @@
 #include <stdbool.h>
-#include "funcoes.h"
+#include "perfeito.h"
 
 bool verificaPerfeito(int k)
 {
@@ -17,22 +17,23 @@ bool verificaPerfeito(int k)
 
 int encontraPerfeito(int n)
 {
-    int count = 0, num_perfeito;
+    int count = 0,
+        i = 1,
+        num_perfeito;
     bool procura = true;
 
     while (procura)
     {
-        for (int i = 1; i >= 1; i++)
+        if (verificaPerfeito(i))
+            count++;
+
+        if (n == count)
         {
-            if (verificaPerfeito(i))
-                count++;
-            if (n == count)
-            {
-                num_perfeito = i;
-                procura = false;
-                break;
-            }
+            num_perfeito = i;
+            procura = false;
         }
+
+        i++;
     }
 
     return num_perfeito;
