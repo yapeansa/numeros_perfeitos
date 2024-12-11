@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include "perfeito.h"
 
-bool verificaPerfeito(int k)
+bool verifica_se_e_perfeito(int k)
 {
     int soma = 0;
 
@@ -15,7 +15,7 @@ bool verificaPerfeito(int k)
         return false;
 }
 
-int encontraPerfeito(int n)
+int encontra_perfeito(int n)
 {
     int count = 0,
         i = 1,
@@ -24,7 +24,7 @@ int encontraPerfeito(int n)
 
     while (procura)
     {
-        if (verificaPerfeito(i))
+        if (verifica_se_e_perfeito(i))
             count++;
 
         if (n == count)

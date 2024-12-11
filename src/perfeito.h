@@ -1,7 +1,7 @@
 #ifndef PERFEITO
 #define PERFEITO
 
-bool verificaPerfeito(int k);
-int encontraPerfeito(int n);
+bool verifica_se_e_perfeito(int k);
+int encontra_perfeito(int n);
 
 #endif
